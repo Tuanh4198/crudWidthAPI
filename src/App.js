@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import 'antd/dist/antd.css'; 
+import React from 'react';
+import { Row, Col, Divider } from 'antd';
+import ListNote from './components/crudNote/ListNote';
+import FormNote from './components/crudNote/FormNote';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Row>
+      <Col span={12} xs={{ order: 24 }} sm={{ order: 24 }} md={{ order: 12 }} lg={{ order: 12 }}>
+        <ListNote/>
+      </Col>
+      <Col span={12} xs={{ order: 24 }} sm={{ order: 24 }} md={{ order: 12 }} lg={{ order: 12 }}>
+        <FormNote/>
+      </Col>
+    </Row>
   );
 }
 

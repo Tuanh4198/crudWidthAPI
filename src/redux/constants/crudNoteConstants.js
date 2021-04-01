@@ -1,0 +1,4 @@
+export const FETCH_NOTE_REQUEST = "FETCH_NOTE_REQUEST";
+export const FETCH_NOTE_SUCCESS = "FETCH_NOTE_SUCCESS";
+export const FETCH_NOTE_ERROR = "FETCH_NOTE_ERROR";
+// fetch api
